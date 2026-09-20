@@ -1,0 +1,254 @@
+/* 1. Basic */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* 2. Navbar */
+.navbar {
+    background: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #222;
+}
+
+.logo span {
+    color: #6c5ce7;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+
+.navbar a:hover {
+    color: #6c5ce7;
+}
+
+
+/* 3. Home */
+.home {
+    min-height: 600px;
+    padding: 70px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.home-text {
+    max-width: 600px;
+}
+
+.home-text > p:first-child {
+    color: #6c5ce7;
+    font-weight: bold;
+}
+
+.home h1 {
+    font-size: 55px;
+    margin: 15px 0;
+}
+
+.home h1 span {
+    color: #6c5ce7;
+}
+
+.description {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.button {
+    background: #6c5ce7;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+
+/* 4. Profile Image */
+.home-image {
+    width: 330px;
+    height: 330px;
+    background: #e8e5ff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-image img {
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid white;
+}
+
+
+/* 5. Common Sections */
+.section {
+    padding: 80px 8%;
+}
+
+.title {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+
+/* 6. About */
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.about p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.about-info {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+
+/* 7. Skills */
+.skills-section {
+    background: white;
+}
+
+.skills {
+    display: grid;
+   grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.skill {
+    background: #f5f5f5;
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.skill h3 {
+    margin-bottom: 10px;
+}
+
+.skill p {
+    color: #666;
+}
+
+
+/* 8. Projects */
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.project {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.project span,
+.project small {
+    color: #6c5ce7;
+}
+
+.project h3 {
+    margin: 15px 0;
+    font-size: 24px;
+}
+
+/* 9. Education */
+.education {
+    background: #f5f5f5;
+}
+
+.education-box {
+    background: white;
+    max-width: 750px;
+    margin: 20px auto;
+    padding: 25px;
+
+}
+
+.education-box p {
+    color: #666;
+    margin: 5px 0;
+}
+
+.marks {
+    color: #6c5ce7;
+    margin-top: 10px;
+}
+
+
+/* 10. Contact */
+.contact {
+    background: #17172c;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.contact p {
+    color: #ccc;
+    margin: 10px;
+}
+
+.contact a {
+    color: #a69cff;
+}
+
+
+/* 11. Footer */
+footer {
+    background: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* 12. Hover */
+.skill,
+.project {
+    transition: 0.3s;
+}
+
+.skill:hover,
+.project:hover {
+    transform: translateY(-5px);
+}
